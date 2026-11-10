@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- 1. Header Navigation -->
+  <header class="header">
+    <div class="logo">My Portfolio</div>
+    <nav class="nav">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Main Content Wrapper -->
+  <main class="container">
+
+    <!-- 2. Hero Section -->
+    <section class="hero" id="hero">
+      <div class="hero-text">
+        <h1 class="greeting">Hi, I am</h1>
+        <h2 class="role-animated">Full Stack Developer</h2>
+        <p class="tagline">Building modern web applications with MERN stack.</p>
+      </div>
+      <div class="hero-image-container">
+        <div class="avatar-circle">
+          <!-- SVG Avatar mimicking the image design -->
+          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <path fill="#4C84C4" d="M40 180 C40 140, 70 120, 100 120 C130 120, 160 140, 160 180 Z"/>
+            <path fill="#2E4A7D" d="M60 180 L85 130 L100 150 L115 130 L140 180 Z"/>
+            <polygon points="92,135 108,135 103,165 97,165" fill="#E74C3C"/>
+            <polygon points="85,130 100,145 115,130 100,135" fill="#FFFFFF"/>
+            <circle cx="100" cy="85" r="35" fill="#FCD3B3"/>
+            <path fill="#2C3E50" d="M65 80 C65 50, 80 40, 100 40 C120 40, 135 50, 135 80 C135 70, 125 55, 100 55 C75 55, 65 70, 65 80 Z"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. About Section -->
+    <section class="section about-section" id="about">
+      <h2>About Me</h2>
+      <p>
+        Hello! My name is Aditya, and I am currently learning web development. This is my first portfolio website where I showcase my passion for creating interactive and responsive web pages. I am a student pursuing a B.Tech degree, and I am deeply interested in technology and coding. I love exploring new skills every day, and I always aim to improve my knowledge in the field of web development. With a hardworking and consistent mindset, I am determined to grow as a developer and build creative projects that make a real impact.
+      </p>
+    </section>
+
+    <!-- 4. Skills Section -->
+    <section class="section skills-section" id="skills">
+      <h2>My Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>HTML</h3>
+          <p>Beginner</p>
+        </div>
+        <div class="skill-card">
+          <h3>CSS</h3>
+          <p>Beginner</p>
+        </div>
+        <div class="skill-card">
+          <h3>JavaScript</h3>
+          <p>Learning</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Projects Section -->
+    <section class="section projects-section" id="projects">
+      <h2>My Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3>Project 1</h3>
+          <p>A simple HTML & CSS webpage.</p>
+        </div>
+        <div class="project-card">
+          <h3>Project 2</h3>
+          <p>Another awesome mini project.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Contact Section -->
+    <section class="section contact-section" id="contact">
+      <h2>Contact Me</h2>
+      <div class="form-wrapper">
+        <form class="contact-form" action="#" method="POST" onsubmit="event.preventDefault();">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" placeholder="Write your message" required></textarea>
+          </div>
+          <button type="submit" class="btn-submit">Send</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 7. Footer & Back to Top -->
+  <footer class="footer">
+    <p>&copy; 2026 Student Name. All rights reserved.</p>
+  </footer>
+
+  <div class="back-to-top-container">
+    <a href="#hero" class="btn-back-to-top">↑ Back to Top</a>
+  </div>
+
+</body>
+</html>
